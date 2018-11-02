@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: SpringRestDBBasicAuth2
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Saurabh1.Mishra
+Implementation-Vendor-Id: com.spring
+Build-Jdk: 1.8.0_112
+Implementation-URL: http://projects.spring.io/spring-boot/web/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
