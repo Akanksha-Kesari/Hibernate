@@ -1,0 +1,41 @@
+
+drop table roles
+drop table logins
+CREATE TABLE logins ( 
+LOGIN_ID number(10)  NOT NULL, 
+USERNAME varchar2(45) NOT NULL, 
+PASSWORD varchar2(45) NOT NULL, 
+ENABLED number(1) NOT NULL, 
+PRIMARY KEY (LOGIN_ID) 
+);
+
+CREATE TABLE roles ( 
+ROLE_ID number(10) primary key, 
+LOGIN_ID number(10) NOT NULL, 
+ROLE varchar2(45) NOT NULL,
+CONSTRAINT fk_roles
+FOREIGN KEY (LOGIN_ID) REFERENCES logins (LOGIN_ID) 
+); 
+
+
+
+insert into  logins values(101,'saurabh','admin',1);
+commit;
+insert into logins values(102,'monu','m123',0);
+commit;
+insert into logins values(103,'ravic','r123',-2);
+commit
+
+insert into  roles values(101,101,'ROLE_USER');
+commit
+insert into  roles values(102,102,'ROLE_USER');
+commit
+insert into  roles values(103,103,'ROLE_USER');
+commit
+
+select * from roles
+select * from logins
+
+delete from roles;
+delete from logins;
+

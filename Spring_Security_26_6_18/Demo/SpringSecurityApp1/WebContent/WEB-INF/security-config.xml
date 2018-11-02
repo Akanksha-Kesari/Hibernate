@@ -1,0 +1,29 @@
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security.xsd">
+
+<!-- Configure Spring security using security:http tag -->
+	<http auto-config="true">
+	<!-- 
+	Specify the URL should be intercepted by Spring security 
+Also specify that access should be restricted only to those users who have the role ROLE_ADMIN 
+	 -->
+
+ <intercept-url pattern="/profile/*" access="ROLE_ADMIN" />
+		
+		   	</http>
+<!-- 
+Specify the authentication and authorization credentials for valid users  <security:user> tag 
+using which the name, password and authorization role for a user is specified. 
+ -->
+	  <authentication-manager>
+		<authentication-provider>
+			<user-service>
+			<user name="saurabh" password="admin" authorities="ROLE_ADMIN" />
+			</user-service>
+	    	</authentication-provider>
+     	</authentication-manager>
+        </beans:beans>
