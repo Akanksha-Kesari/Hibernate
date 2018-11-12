@@ -1,0 +1,2 @@
+@OneToMany(cascade = CascadeType.ALL,fetch=FetchType.EAGER)
+default fetchtype is lazy for OneToMany or collections
