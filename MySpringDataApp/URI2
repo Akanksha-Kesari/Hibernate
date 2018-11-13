@@ -1,0 +1,12 @@
+GET     http://localhost:8087/bookbyname?str=JAVA
+Get     http://localhost:8087/bookbyname?str=Mike// use Query to find by author
+GET     http://localhost:8087/booknamebyignorecase?name=java
+Get     http://localhost:8087/countbook?name=java
+GET     http://localhost:8087/nameandauthor?author=Ritche&name=JSP
+GET     http://localhost:8087/authororname?author=Ritche&name=C
+Get     http://localhost:8087/orderbyname?author=Ritche
+Get     http://localhost:8087/projection?name=Mike // projection
+Get     http://localhost:8087/distbook
+Get     http://localhost:8087/getbook?p=500
+
+http://localhost:8087/proj

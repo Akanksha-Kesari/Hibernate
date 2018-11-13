@@ -1,0 +1,11 @@
+Get     http://localhost:8087/all-books
+Get     http://localhost:8087/book?id=103
+
+Post    http://localhost:8087/addbook?id=101&name=C&author=Ritche&price=500
+ http://localhost:8087/addbook?id=102&name=C++&author=BalaGuru&price=600
+ http://localhost:8087/addbook?id=103&name=Java&author=James&price=700
+ http://localhost:8087/addbook?id=104&name=Adv Java&author=Mike&price=800
+   
+PUT     http://localhost:8087/update-book?id=101&name=java&author=Mine&price=800
+DELETE  http://localhost:8087/delete-book?id=103
+
