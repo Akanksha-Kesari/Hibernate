@@ -1,6 +1,6 @@
-GET     http://localhost:8087/bookbyname?str=JAVA
+GET     http://localhost:8087/bookbyname?str=Java
 Get     http://localhost:8087/bookbyname?str=Mike// use Query to find by author
-GET     http://localhost:8087/booknamebyignorecase?name=java
+GET     http://localhost:8087/booknamebyignorecase?name=Java
 Get     http://localhost:8087/countbook?name=java
 GET     http://localhost:8087/nameandauthor?author=Ritche&name=JSP
 GET     http://localhost:8087/authororname?author=Ritche&name=C

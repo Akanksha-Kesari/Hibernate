@@ -27,4 +27,14 @@ public class BookCurdRepositoryService {
 	public void addBook(Book b) {
 		bcr.save(b);
 	}
+	public Book getBook(int id)
+	{
+			Book b=bcr.findOne(id);
+			return b;
+	}
+	
+	public void deleteBook(int id)
+	{
+		bcr.delete(id);
+	}
 }

@@ -35,4 +35,17 @@ public class SpringRestCurdRepo {
       return "book added";
 	}
 	
+	@RequestMapping(value="getbook",method=RequestMethod.POST,produces="application/json")
+	public Book getBook(@RequestParam int id)
+	{
+		return bcrs.getBook(id);
+	}
+	
+	@RequestMapping(value="deletebook",method=RequestMethod.DELETE)
+	public String deleteBook(@RequestParam int id)
+	{
+		 bcrs.deleteBook(id);
+		 return "book deleted";
+	}
+	
 }
